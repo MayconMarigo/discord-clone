@@ -6,8 +6,9 @@ export const ItemContainer = styled.div`
   flex-direction: column;
   align-items: center;
   flex: 1;
-  padding: 12px ${GlobalStyles.padding};
+  padding: 12px ${GlobalStyles.padding} 150px;
   gap: 8px;
+  position: relative;
 `;
 
 export const InnerItemContainer = styled.div`
@@ -31,9 +32,14 @@ export const InnerItemContainer = styled.div`
     border-radius: 0 15px 15px 0;
     background-color: #fff;
     position: absolute;
-    left: 0;
+    left: 0 !important;
     transition: 0.1s;
   };
+
+  svg{
+  pointer-events: none;
+  color: ${({ selected }) => selected ? "#fff" : "#23a559"};
+  }
 
   &:hover{
     border-radius: 16px;
@@ -42,9 +48,14 @@ export const InnerItemContainer = styled.div`
     &:nth-last-child(-n + 4){
       background-color: ${GlobalStyles.navigationLastIndexes};
     };
+
     &:before{
       height: ${({ selected }) => selected ? '40px' : '20px'};
       width: 4px;
+    }
+
+    svg{
+      color: #fff !important;
     }
   };
 `;
