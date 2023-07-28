@@ -1,10 +1,8 @@
-import ContactsMenu from './components/contacts-menu/contactsMenu';
-import Maincontent from './components/main-content/maincontent';
-import Sidemenu from './components/side-menu/Sidemenu';
-import './globals.css';
 import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import Maincontent from './components/main-content/MainContent';
+import SecondRow from './components/second-row/SecondRow';
+import Sidemenu from './components/side-menu/SideMenu';
+import './globals.css';
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,9 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         <Sidemenu />
-        <ContactsMenu />
+        <SecondRow content={{ type: "message" }} />
         <Maincontent>
           {children}
         </Maincontent>

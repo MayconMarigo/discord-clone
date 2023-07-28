@@ -1,6 +1,6 @@
 "use client"
 
-import { Container, MainBody, MainHeader } from "./maincontent.styles";
+import { Container, MainBody, MainHeader } from "./MainContent.styles"
 
 export default function Maincontent() {
   return (

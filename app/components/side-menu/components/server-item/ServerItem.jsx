@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { ItemContainer, InnerItemContainer, Divider } from "./serverItem.styles";
+import { ItemContainer, InnerItemContainer, Divider } from "./ServerItem.styles";
 import { getLastIndex } from "@/app/utils/arrayUtils";
-import { serversConfigItems } from "./serverConfigItems";
+import { serversConfigItems } from "./ServerConfigItems";
 import { convertStringToUpperCase } from "@/app/utils/stringUtils";
 
 export default function ServerItem() {
