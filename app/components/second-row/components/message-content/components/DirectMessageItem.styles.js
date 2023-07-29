@@ -1,7 +1,7 @@
 import { GlobalStyles } from "@/app/theme/Global.styles";
 import styled from "styled-components";
 
-export const ContactItemButton = styled.button`
+export const DirectMessageItemButton = styled.button`
   padding: ${GlobalStyles.buttonPadding};
   display: flex;
   align-items: center;
@@ -10,12 +10,12 @@ export const ContactItemButton = styled.button`
   font-weight: 600;
   font-size: 14.5px;
   background-color: ${({ selected, pressed }) => pressed ? "#35373c" : selected ? "#3b3d44" : "transparent"};
-  color: ${({ selected }) => selected ? "#fff" : GlobalStyles.fonts.secondRowColor};
+  color: ${({ selected }) => selected ? GlobalStyles.fonts.secondRowColorHover : GlobalStyles.fonts.secondRowColor};
   cursor: pointer;
 
   &:hover{
     background-color: ${({ selected, pressed }) => pressed ? "#3b3d44" : selected ? "#35373c" : GlobalStyles.hovers.secondRowItem};
-    color: #fff;
+    color: ${GlobalStyles.fonts.secondRowColorHover};
   }
   &:nth-of-type(2){
    justify-content: space-between;

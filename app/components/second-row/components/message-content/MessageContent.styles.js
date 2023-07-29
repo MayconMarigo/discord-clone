@@ -1,5 +1,6 @@
 import { GlobalStyles } from "@/app/theme/Global.styles";
 import styled from "styled-components";
+import AddIcon from "@mui/icons-material/Add";
 
 export const SecondRowHeader = styled.div`
   border-bottom: 1px solid ${GlobalStyles.navigationContainer};
@@ -33,4 +34,35 @@ export const DefaultConfigItemsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2px;
+`;
+
+export const DirectMessageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: ${GlobalStyles.fonts.secondRowColor};
+  padding: 0 12px;
+  margin-top: 17px;
+  &:hover{
+    > span {
+      color: ${GlobalStyles.fonts.secondRowColorHover};
+    }
+  }
+`;
+
+export const DirectMessageText = styled.span`
+  font-size: 11px;
+  font-weight: 600;
+`;
+
+export const CustomAddIcon = styled(AddIcon)`
+  font-size: 18px;
+  &:hover{
+    color: ${GlobalStyles.fonts.secondRowColorHover};
+  };
+  cursor: pointer;
+`;
+
+export const ContactsContainer = styled.div`
+
 `;

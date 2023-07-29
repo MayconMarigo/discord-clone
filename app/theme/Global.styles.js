@@ -17,7 +17,8 @@ export const GlobalStyles = {
   buttonPadding: BUTTON_PADDING,
 
   fonts: {
-    secondRowColor: "#949ba4"
+    secondRowColor: "#949ba4",
+    secondRowColorHover: "#dbdee1",
   },
   heights: {
     contacts: {

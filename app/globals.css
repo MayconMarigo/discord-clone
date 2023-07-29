@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'gg sans', sans-serif !important;
+  font-family: "gg sans", sans-serif !important;
 }
 
 body {
@@ -12,7 +12,8 @@ body {
   overflow: hidden;
 }
 
-.active-item-blue, .active-item-green{
+.active-item-blue,
+.active-item-green {
   border-radius: 16px !important;
 }
 
@@ -24,3 +25,14 @@ body {
   background-color: #23a559 !important;
 }
 
+.MuiTooltip-tooltip{
+  background-color: #111214 ;
+  padding: 9px 15px;
+  font-size: 14px;
+  color: #9da0a2;
+  font-weight: 600;
+}
+
+.MuiTooltip-arrow{
+  color: #111214;
+}
